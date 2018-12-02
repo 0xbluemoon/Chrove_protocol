@@ -1,7 +1,7 @@
 # Chrove_protocol
 An anonymously pay and autonomous service
 
-# Why anonymous matters for proxy/VPN vendor?
+# Why anonymous and autonomous is important for proxy/VPN vendor?
 
 In some country, people suffer from internet censorship.
 There are many commercial VPN business. But most of them are blocked.
