@@ -1,5 +1,5 @@
 # Chrove_protocol
-An anonymously pay and go service
+An anonymously pay and autonomous service
 
 # Why anonymous matters for proxy/VPN vendor?
 
@@ -7,16 +7,16 @@ In some country, people suffer from internet censorship.
 There are many commercial VPN business. But most of them are blocked.
 In that country, engineer and small business man build small proxy to make a little money.
 But their websites are often blocked and their customer can not contact them. 
-They have to accept cash through online payment because there is no choice.
-Some of them are put into jail by authorities because officer can find the link between user’s cash account and their cash account.
+They have to accept cash through online payment because there is no other choice.
+Some of them are put into jail by authorities because officer can link customer’s account cash flow to their account.
 
 
 # Why Chrove
 
-Chrove is invented to create an anonymously order and service model.
+Chrove is invented to create an anonymously ordering and autonomous service.
 As vendor, you put your service info on a smart contract. Nobody can remove it. 
 You won’t lose your customer even if you change domain or IP because people only remember smart contract.
-People pay you crypto currency. No bill on bank, credit card.
+People pay you crypto currency. No bill on bank account or credit card.
 Of course , you don’t know your users, too.
 Both sides are safe.
 
