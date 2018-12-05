@@ -40,17 +40,24 @@ It will be release soon.
 
 ## protocol
 Server provide a web, two interface
-### Price.json
-This api is used to tell customer how to pay, and service introduction.
+### /price.json
+This api is used to tell what service it provide, the price of service, and how to pay.
+
 The content is
 ```
-{'ContractAddress':'deadbeef', 'Price':{"symbol": "EOS", "amount": "1","unit":"per Day"}, 
+payload_to_client = {'ContractAddress':'deadbeef', 'Price':{"symbol": "EOS", "amount": "1","unit":"per Day"}, 
 'PublicKey':JWK_of_server_public, 'PublicKeyEnc':JWK_of_server_public_enc, "ts":timestamp_in_seconds, 
 "brandinfo":{"Logo":"http://www.bbb.zzz/logo.pn",
 "title":"flying ghost","description":"a very quickly proxy"}
 }
+signed_by_server = JWS(timestamp_in_seconds_in_string, private_key_server)
+result_to_client = { 
+                                "content": payload_to_client,
+                                "ts_signature": signed_by_server}
+                        }
 ```
-### Cert
+The 
+### /cert.info
 This api is used to tell customer the service information
 ```
  ss_cert_list = [{"type": "ss", "server_name":"hello", "config":{"address": "1.1.1.1", "port": 1984, "method": "aes-cfb-256", "key": "romanholidy3947"}},
