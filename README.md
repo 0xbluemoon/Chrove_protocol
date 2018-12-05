@@ -37,3 +37,24 @@ Go lang client
 python client
 
 It will be release soon.
+
+## protocol
+Server provide a web, two interface
+### Price.json
+This api is used to tell customer how to pay, and service introduction.
+The content is
+```
+{'ContractAddress':'deadbeef', 'Price':{"symbol": "EOS", "amount": "1","unit":"per Day"}, 
+'PublicKey':JWK_of_server_public, 'PublicKeyEnc':JWK_of_server_public_enc, "ts":timestamp_in_seconds, 
+"brandinfo":{"Logo":"http://www.bbb.zzz/logo.pn",
+"title":"flying ghost","description":"a very quickly proxy"}
+}
+```
+### Cert
+This api is used to tell customer the service information
+```
+ ss_cert_list = [{"type": "ss", "server_name":"hello", "config":{"address": "1.1.1.1", "port": 1984, "method": "aes-cfb-256", "key": "romanholidy3947"}},
+{"type": "socks5", "server_name":"world", "config":{"address": "2.2.1.1", "port": 11984, "username": "tomhanks", "password": "pass23hljhsdf"}},
+{"type": "https", "server_name":"fish", "config":{"address": "3.3.3.3", "port": 14455, "username": "tomcruse", "password": "pass5767lskljdf"}}
+]
+```
