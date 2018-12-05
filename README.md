@@ -65,8 +65,27 @@ result_to_client = {
 
 ### GET /cert.info with parameter
 Client need to prepare http request with a parameter called code, value should be A compact JWE string.
+1. calculate kid
 ```
+kid_of_client_public_key = base58_encoding(SHA256(SHA256(public_key_client["n"]))
 ```
+An example of kid_of_client_public_key can be 'HareBAjopJi7GabM5HEX1VWsTHEmu8cFfAQFfSpbMsvT'
+                  
+2. generate client signature
+```
+my_signature = JWS(string(current_time_stamp_in_seconds), private_key_client)
+```
+3. content to server before encrypt
+```
+clear_payload_to_server = {"key":JWK(public_key_client), "signature": my_signature, "request":"my_subscribe"}
+```
+4. encrypt content with server's public key
+```
+encrypted_payload_server = JWE(clear_payload_to_server, public_key_server)
+```
+
+parameter to http url should be http:xxx.yy/cert.info?code=encrypted_payload_server
+
 Server will decrypt the request by it's private key, then verify the signature. Then server will hash the RSA public key and use the result as key to match purchase record, because client will pay server and write hash in memo. If server find matching redord, server will use the api to tell customer the service information.
 ```
  ss_cert_list = [{"type": "ss", "server_name":"hello", "config":{"address": "1.1.1.1", "port": 1984, "method": "aes-cfb-256", "key": "romanholidy3947"}},
