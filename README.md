@@ -62,15 +62,24 @@ result_to_client = {
                                 "ts_signature": signed_by_server}
                         }
 ```
-The 
+
 ### GET /cert.info with parameter
 Client need to prepare http request with a parameter called code, value should be A compact JWE string.
 ```
 ```
-Server use the api to tell customer the service information. But client ne
+Server will decrypt the request by it's private key, then verify the signature. Then server will hash the RSA public key and use the result as key to match purchase record, because client will pay server and write hash in memo. If server find matching redord, server will use the api to tell customer the service information.
 ```
  ss_cert_list = [{"type": "ss", "server_name":"hello", "config":{"address": "1.1.1.1", "port": 1984, "method": "aes-cfb-256", "key": "romanholidy3947"}},
 {"type": "socks5", "server_name":"world", "config":{"address": "2.2.1.1", "port": 11984, "username": "tomhanks", "password": "pass23hljhsdf"}},
 {"type": "https", "server_name":"fish", "config":{"address": "3.3.3.3", "port": 14455, "username": "tomcruse", "password": "pass5767lskljdf"}}
 ]
+```
+generate signature
+```
+signed_payload = JWS(ts_server, server_private_key)
+```
+Encrypt result to client
+```
+response_of_server_signed = {'service_type':'proxy', 'service_content':{"server_list": ss_cert_list}, "ts": ts_server, "signature_str_ts": signed_payload})
+response_http = JWE(response_of_server_signed, public_key_client)
 ```
