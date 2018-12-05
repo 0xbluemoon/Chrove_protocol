@@ -39,26 +39,35 @@ python client
 It will be release soon.
 
 ## protocol
-Server provide a web, two interface
-### /price.json
+Server provide a web, two interfaces
+### GET /price.json without parameter
 This api is used to tell what service it provide, the price of service, and how to pay.
 
-The content is
+The content is in json format.
 ```
 payload_to_client = {'ContractAddress':'deadbeef', 'Price':{"symbol": "EOS", "amount": "1","unit":"per Day"}, 
 'PublicKey':JWK_of_server_public, 'PublicKeyEnc':JWK_of_server_public_enc, "ts":timestamp_in_seconds, 
 "brandinfo":{"Logo":"http://www.bbb.zzz/logo.pn",
 "title":"flying ghost","description":"a very quickly proxy"}
 }
+```
+Prepare signed content to verify public key
+```
 signed_by_server = JWS(timestamp_in_seconds_in_string, private_key_server)
+```
+Put them together and send to http client
+```
 result_to_client = { 
                                 "content": payload_to_client,
                                 "ts_signature": signed_by_server}
                         }
 ```
 The 
-### /cert.info
-This api is used to tell customer the service information
+### GET /cert.info with parameter
+Client need to prepare http request with a parameter called code, value should be A compact JWE string.
+```
+```
+Server use the api to tell customer the service information. But client ne
 ```
  ss_cert_list = [{"type": "ss", "server_name":"hello", "config":{"address": "1.1.1.1", "port": 1984, "method": "aes-cfb-256", "key": "romanholidy3947"}},
 {"type": "socks5", "server_name":"world", "config":{"address": "2.2.1.1", "port": 11984, "username": "tomhanks", "password": "pass23hljhsdf"}},
