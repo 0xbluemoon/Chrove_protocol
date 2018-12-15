@@ -67,7 +67,7 @@ payload_to_client = {'ContractAddress':'deadbeefduck', 'Price':{"symbol": "EOS",
 "title":"flying ghost","description":"a very quickly proxy"}
 }
 ```
-Signed content with server's public key
+Signed timestamp with server's public key.(This could be weakness of whole system)
 ```
 signed_by_server = JWS(timestamp_in_seconds_in_string, private_key_server)
 ```
