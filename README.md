@@ -21,13 +21,12 @@ This is a new service model support anonymously pay and autonomous service deliv
 # Why Chrove
 Client's information are often leaked because of careless engineer and other reason. We believe real name and bill adderss is not necessary in some cases. So Chrove is invented to support anonymously ordering and automatically delivery service.
 
-The first application is Chrove proxy. It is the first proxy you can anonymously order. Your proxy know nothing about you. This protect you and vendor. Anonymous is more important for vendor located in Iran, Russia, and China.
+The first application is Chrove proxy. It is the first proxy you can anonymously order. Your proxy know nothing about you. Anonymous protect you and the vendor. Anonymous is very important for people and vendor in Iran, Russia, and China.
 
-As vendor, you put your service info your smart contract. Nobody except you can remove it. 
-You won’t lose your customer even if you change domain or IP because people still remember smart contract.
-People pay you cryptocurrency. No bill on bank account or credit card.
-Of course , you don’t know your users, too.
-Both sides are safe.
+## protect proxy vender
+Vendors put their URL into smart contract. Nobody else can remove it. 
+Vendors won’t lose their customer even if they change domain or IP address because people remember smart contract.
+Vendors accept cryptocurrency, not cash so no income on bank account or credit card. Vendors don’t know their users, too.
 
 ## Chrove service market
 As vendor, you may feel hard to let people know your service, you can pay some popular smart contract holder to list your service.
@@ -37,8 +36,8 @@ A smart contract holder can list and add service in his smart contract. The smar
 Current Chrove client on google chrome
 # Design principle
 
-Technically, Chrove is based on HTTP, JSON, JWT, JWK, JWE, and RSA encryption and signature.
-Chrove don’t force vendor run SSL because it is easy to anonymously run a server, but it is tricky to register a domain and apply a SSL certification even there’s awesome Let’s Encrypt.
+Chrove is based on open and verified technology: HTTP, JSON, JWT, JWK, JWE, and RSA encryption and signature.
+Chrove don’t force vendor run SSL because it is easy to anonymously run a server, but it is tricky to register a domain and apply a SSL certification even there’s awesome [Let’s Encrypt](https://letsencrypt.org/).
 
 Chrove encrypt information by peer’s public key on plain text HTTP protocol. It is strong enough now.
 
