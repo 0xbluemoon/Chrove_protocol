@@ -5,7 +5,7 @@ This is a new service model support anonymously pay and autonomous service deliv
 * Vendor setup server, insert server URL into smart contract
 * User install client
 #### query
-* Client read smart contract, found some URL
+* User open client to read smart contract, found some URL
 * Client visit /price.json of all URLs  and list them all to user
 * User select one of service
 * Client show service introduction and price and payment method of service
