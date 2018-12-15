@@ -45,25 +45,26 @@ Chrove don’t force vendor run SSL because it is easy to anonymously run a serv
 
 Chrove encrypt information by peer’s public key on plain text HTTP protocol. It is strong enough now.
 
-# Let’s talked about code:
+# User client suppport Chrove:
 
-Chrove user client:
-A javascript client.
+[Chrove proxy client in Google chrome browser extension](https://chrome.google.com/webstore/detail/chrove/bgbfndcenmhjccmfedpoknepjbfmolib)
 
-Chrove vendor client:
-Go lang client
-python client
+# Server client support 
+[Chrove proxy server]()
 
-It will be release soon.
 
 ## protocol
-Server provide a web, two interfaces
-### GET /price.json without parameter
-This api is used to tell what service it provide, the price of service, and how to pay.
+Chrove server need to provide a web service and provide two api.
 
-The content is in json format.
+### GET /price.json
+No parameter.
+
+This api tell client the service content and price, and how to pay.
+
+The response content is in json format.
+#### the process to generate the content
 ```
-payload_to_client = {'ContractAddress':'deadbeef', 'Price':{"symbol": "EOS", "amount": "1","unit":"per Day"}, 
+payload_to_client = {'ContractAddress':'deadbeefduck', 'Price':{"symbol": "EOS", "amount": "1","unit":"per Day"}, 
 'PublicKey':JWK_of_server_public, 'PublicKeyEnc':JWK_of_server_public_enc, "ts":timestamp_in_seconds, 
 "brandinfo":{"Logo":"http://www.bbb.zzz/logo.pn",
 "title":"flying ghost","description":"a very quickly proxy"}
@@ -81,7 +82,7 @@ result_to_client = {
                         }
 ```
 
-### GET /cert.info with parameter
+### GET /cert.info
 Client need to prepare http request with a parameter called code, value should be A compact JWE string.
 1. calculate kid
 ```
