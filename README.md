@@ -19,7 +19,7 @@ This is a new service model support anonymously pay and autonomous service deliv
 * Server decrypt request by it's private key, verify signature by client's public key, accept request, query purchase record with hash of key, return service informaton.
 
 # Why Chrove
-Nearly all kinds of internet service requir client to register an account. But client's information are often leaked because of careless engineer and other reason. We believe real name and bill adderss is not necessary in some cases. So Chrove is invented to support anonymously ordering and automatically delivery service.
+Client's information are often leaked because of careless engineer and other reason. We believe real name and bill adderss is not necessary in some cases. So Chrove is invented to support anonymously ordering and automatically delivery service.
 
 The first application is Chrove proxy. It is the first proxy you can anonymously order. Your proxy know nothing about you. This protect you and vendor. Anonymous is more important for vendor located in Iran, Russia, and China.
 
