@@ -18,27 +18,23 @@ This is a new service model support anonymously pay and autonomous service deliv
 * Client send request to server
 * Server decrypt request by it's private key, verify signature by client's public key, accept request, query purchase record with hash of key, return service informaton.
 
-
-# Why anonymous and autonomous is important for proxy/VPN vendor?
-
-In some country, people suffer from internet censorship.
-There are many commercial VPN business. But most of them are blocked.
-In that country, engineer and small business man build small proxy to make a little money.
-But their websites are often blocked and their customer can not contact them. 
-They have to accept cash through online payment because there is no other choice.
-Some of them are put into jail by authorities because officer can link customer’s account cash flow to their account.
-
-
 # Why Chrove
+Nearly all kinds of internet service requir client to register an account. But client's information are often leaked because of careless engineer and other reason. We believe real name and bill adderss is not necessary in some cases. So Chrove is invented to support anonymously ordering and automatically delivery service.
 
-Nearly all kinds of internet service requir client to register an account. But client's information are often leaked because of careless engineer and other reason. We believe user real name and bill adderss is not necessary in some case. So Chrove is invented to create an anonymously ordering and automatically delivery service.
+The first application is Chrove proxy. It is the first proxy you can anonymously order. Your proxy know nothing about you. This protect you and vendor. Anonymous is more important for vendor located in Iran, Russia, and China.
 
-As vendor, you put your service info on a smart contract. Nobody can remove it. 
-You won’t lose your customer even if you change domain or IP because people only remember smart contract.
-People pay you crypto currency. No bill on bank account or credit card.
+As vendor, you put your service info your smart contract. Nobody except you can remove it. 
+You won’t lose your customer even if you change domain or IP because people still remember smart contract.
+People pay you cryptocurrency. No bill on bank account or credit card.
 Of course , you don’t know your users, too.
 Both sides are safe.
 
+## Chrove service market
+As vendor, you may feel hard to let people know your service, you can pay some popular smart contract holder to list your service.
+
+A smart contract holder can list and add service in his smart contract. The smart contract become a market.
+
+Current Chrove client on google chrome
 # Design principle
 
 Technically, Chrove is based on HTTP, JSON, JWT, JWK, JWE, and RSA encryption and signature.
