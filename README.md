@@ -1,8 +1,8 @@
 # Chrove_protocol
-This is a new service model support anonymously pay and automatically service delivery. Customer and vendor are anonymous to  each other. Service is delivered automatically to customer.
+This is a new service model support anonymously pay and automatically service delivery.
 ## process
 #### setup
-* Vendor setup server, insert server URL into smart contract
+* Vendor setup server and insert server URL into smart contract
 * User install client
 #### query
 * User open client to read smart contract, found some URL
@@ -12,7 +12,7 @@ This is a new service model support anonymously pay and automatically service de
 
 #### pay and visit
 
-* User pay cryptocurrency to payment address, writing client's ID into payment memo.
+* User pay cryptocurrency to payment address, writing client's ID into payment memo. Same as bitcoin, client's ID is double hash256 of client's public RSA key.
 * Server found purhase record from blockchain, insert purchase record into local storage.
 * Client generate request before visit server. Request contains action, it's public key, and double hash256 of client's public key. Sign it and encrypt it using server's public key.
 * Client send request to server
