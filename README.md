@@ -1,16 +1,22 @@
 # Chrove_protocol
-An anonymously pay and autonomous service
-## basic process
+This is a new service model support anonymously pay and autonomous service delivery. Customer and vendor are anonymous to each each other. Service is delivered automatically to customer.
+## process
+#### setup
+* Vendor setup server, insert server URL into smart contract
+* User install client
+#### query
+* Client read smart contract, found some URL
+* Client visit /price.json of all URLs  and list them all to user
+* User select one of service
+* Client show service introduction and price and payment method of service
 
-1. client read smart contract, found some website url
-2. client visit all of the URL /price.json and list them all to user
-3. user select one of service
-4. client show service introduction and price and payment address of server.
-5. user pay cryptocurrency to payment address, write user's hash of key into memo.
-6. server found purhase record from blockchain, insert purchase record into local storage.
-7. client generate request which include action, it's public key, and hash of key. Sign it. Encrypt it using server's public key
-8. client send message to server
-9. server decrypt, verify signature, accept request, query purchase record with hash of key, return service informaton.
+#### pay and visit
+
+* User pay cryptocurrency to payment address, writing client's ID into payment memo.
+* Server found purhase record from blockchain, insert purchase record into local storage.
+* Client generate request before visit server. Request contains action, it's public key, and double hash256 of client's public key. Sign it and encrypt it using server's public key.
+* Client send request to server
+* Server decrypt request by it's private key, verify signature by client's public key, accept request, query purchase record with hash of key, return service informaton.
 
 
 # Why anonymous and autonomous is important for proxy/VPN vendor?
