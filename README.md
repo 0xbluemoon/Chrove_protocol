@@ -54,7 +54,7 @@ Chrove encrypt information by peer’s public key on plain text HTTP protocol. I
 Chrove server need to provide a web service and provide two api.
 
 ### GET /price.json
-No parameter.
+Client visit the api without parameter
 
 This api tell client the service content and price, and how to pay.
 
@@ -67,7 +67,7 @@ payload_to_client = {'ContractAddress':'deadbeefduck', 'Price':{"symbol": "EOS",
 "title":"flying ghost","description":"a very quickly proxy"}
 }
 ```
-Prepare signed content to verify public key
+Signed content with server's public key
 ```
 signed_by_server = JWS(timestamp_in_seconds_in_string, private_key_server)
 ```
