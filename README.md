@@ -19,7 +19,7 @@ This is a new service model support anonymously pay and automatically service de
 * Server decrypt request by it's private key, verify signature by client's public key, accept request, query purchase record with hash of key, return service informaton.
 
 # Why Chrove
-Client's information are often leaked because of careless engineer and other reason. We believe real name and bill adderss is not necessary in some cases. 
+Credit card number is top one target of crackers. Client's information are often leaked because of careless engineer and other reason. We believe crypto currency will replace creditcard and real name and bill adderss is not necessary in some cases. 
 
 The first application is Chrove proxy. It is the first proxy you can anonymously order. Your proxy know nothing about you but still serve you. Anonymous protect you and the vendor. Anonymous is very important for people and vendor in Iran, Russia, and China.
 
