@@ -31,7 +31,8 @@ Some of them are put into jail by authorities because officer can link customerâ
 
 # Why Chrove
 
-Chrove is invented to create an anonymously ordering and autonomous service.
+Nearly all kinds of internet service requir client to register an account. But client's information are often leaked because of careless engineer and other reason. We believe user real name and bill adderss is not necessary in some case. So Chrove is invented to create an anonymously ordering and automatically delivery service.
+
 As vendor, you put your service info on a smart contract. Nobody can remove it. 
 You wonâ€™t lose your customer even if you change domain or IP because people only remember smart contract.
 People pay you crypto currency. No bill on bank account or credit card.
