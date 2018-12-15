@@ -1,5 +1,5 @@
 # Chrove_protocol
-This is a new service model support anonymously pay and autonomous service delivery. Customer and vendor are anonymous to  each other. Service is delivered automatically to customer.
+This is a new service model support anonymously pay and automatically service delivery. Customer and vendor are anonymous to  each other. Service is delivered automatically to customer.
 ## process
 #### setup
 * Vendor setup server, insert server URL into smart contract
