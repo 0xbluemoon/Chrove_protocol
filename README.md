@@ -19,9 +19,9 @@ This is a new service model support anonymously pay and automatically service de
 * Server decrypt request by it's private key, verify signature by client's public key, accept request, query purchase record with hash of key, return service informaton.
 
 # Why Chrove
-Client's information are often leaked because of careless engineer and other reason. We believe real name and bill adderss is not necessary in some cases. So Chrove is invented to support anonymously ordering and automatically delivery service.
+Client's information are often leaked because of careless engineer and other reason. We believe real name and bill adderss is not necessary in some cases. 
 
-The first application is Chrove proxy. It is the first proxy you can anonymously order. Your proxy know nothing about you. Anonymous protect you and the vendor. Anonymous is very important for people and vendor in Iran, Russia, and China.
+The first application is Chrove proxy. It is the first proxy you can anonymously order. Your proxy know nothing about you but still serve you. Anonymous protect you and the vendor. Anonymous is very important for people and vendor in Iran, Russia, and China.
 
 ## protect proxy vender
 Vendors put their URL into smart contract. Nobody else can remove it. 
@@ -33,7 +33,8 @@ As vendor, you may feel hard to let people know your service, you can pay some p
 
 A smart contract holder can list and add service in his smart contract. The smart contract become a market.
 
-Current Chrove client on google chrome
+The first smart contract is on EOS blockchain, the address is deadbeefduck.
+
 # Design principle
 
 Chrove is based on open and verified technology: HTTP, JSON, JWT, JWK, JWE, and RSA encryption and signature.
