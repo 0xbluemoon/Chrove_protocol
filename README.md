@@ -8,7 +8,7 @@ This is a new service model support anonymously pay and autonomous service deliv
 * User open client to read smart contract, found some URL
 * Client visit /price.json of all URLs  and list them all to user
 * User select one of service
-* Client show service introduction and price and payment method of service
+* Client show service introduction, price, and payment method of service
 
 #### pay and visit
 
