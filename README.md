@@ -16,12 +16,13 @@ This is a cryptocurrency based payment and ID register protocol. When user pay i
 * Server found purhase record from blockchain, insert purchase record into local storage.
 * Client generate request before visit server. Request contains action, it's public key, and double hash256 of client's public key. Sign it and encrypt it using server's public key.
 * Client send request to server
-* Server decrypt request by it's private key, verify signature by client's public key, accept request, query purchase record with hash of key, return service informaton.
+* Server decrypt request by it's private key, verify signature by client's public key, accept request, query purchase record with hash of key, found service informaton. Then server sign the service information, and encrypt the information with client's public key
+* 
 
 # Why Chrove
-Credit card number is top one target of crackers. Client's information are often leaked because of careless engineer and other reason. We believe crypto currency will replace creditcard and real name and bill adderss is not necessary in some cases. 
+Credit card number is top one target of crackers. Client's information are often leaked because of careless engineer and other reason. We believe crypto currency will replace credit card and real name and bill adderss is not necessary in some cases. 
 
-The first application is Chrove proxy. It is the first proxy you can anonymously order. Your proxy know nothing about you but still serve you. Anonymous protect you and the vendor. Anonymous is very important for people and vendor in Iran, Russia, and China.
+The first application adopt Chrove protocol is Chrove proxy. It is the first proxy you can order anonymously. The proxy know nothing about you but still offer you service. Chrove remove the useless information exchanging between you and the vendor. Anonymous is very important for people and vendor in Iran, Russia, and China.
 
 ## protect proxy vender
 Vendors put their URL into smart contract. Nobody else can remove it. 
