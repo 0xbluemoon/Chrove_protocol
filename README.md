@@ -1,5 +1,5 @@
 # Chrove_protocol
-This is a new service model support anonymously pay and automatically service delivery.
+This is a cryptocurrency based payment and ID register protocol. When user pay in cryptocurrency, the vendor know user id from payment memo. User don't need register again. 
 ## process
 #### setup
 * Vendor setup server and insert server URL into smart contract
