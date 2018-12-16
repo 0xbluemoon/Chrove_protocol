@@ -19,16 +19,6 @@ This is a cryptocurrency based payment and ID register protocol. When user pay i
 * Server decrypt request by it's private key, verify signature by client's public key, accept request, query purchase record with hash of key, found service informaton. Then server sign the service information, and encrypt the information with client's public key
 * 
 
-# Why Chrove
-Credit card number is top one target of crackers. Client's information are often leaked because of careless engineer and other reason. We believe crypto currency will replace credit card and real name and bill adderss is not necessary in some cases. 
-
-The first application adopt Chrove protocol is Chrove proxy. It is the first proxy you can order anonymously. The proxy know nothing about you but still offer you service. Chrove remove the useless information exchanging between you and the vendor. Anonymous is very important for people and vendor in Iran, Russia, and China.
-
-## protect proxy vender
-Vendors put their URL into smart contract. Nobody else can remove it. 
-Vendors won’t lose their customer even if they change domain or IP address because people remember smart contract.
-Vendors accept cryptocurrency, not cash so no income on bank account or credit card.
-
 ## Chrove service market
 As vendor, you may feel hard to let people know your service, you can pay some popular smart contract holders to list your service.
 
