@@ -27,10 +27,10 @@ The first application adopt Chrove protocol is Chrove proxy. It is the first pro
 ## protect proxy vender
 Vendors put their URL into smart contract. Nobody else can remove it. 
 Vendors won’t lose their customer even if they change domain or IP address because people remember smart contract.
-Vendors accept cryptocurrency, not cash so no income on bank account or credit card. Vendors don’t know their users, too.
+Vendors accept cryptocurrency, not cash so no income on bank account or credit card.
 
 ## Chrove service market
-As vendor, you may feel hard to let people know your service, you can pay some popular smart contract holder to list your service.
+As vendor, you may feel hard to let people know your service, you can pay some popular smart contract holders to list your service.
 
 A smart contract holder can list and add service in his smart contract. The smart contract become a market.
 
@@ -38,7 +38,7 @@ The first smart contract is on EOS blockchain, the address is deadbeefduck.
 
 # Design principle
 
-Chrove is based on open and verified technology: HTTP, JSON, JWT, JWK, JWE, and RSA encryption and signature.
+Chrove is based on open and verified technologys: HTTP, JSON, JWT, JWK, JWE, and RSA.
 Chrove don’t force vendor run SSL because it is easy to anonymously run a server, but it is tricky to register a domain and apply a SSL certification even there’s awesome [Let’s Encrypt](https://letsencrypt.org/).
 
 Chrove encrypt information by peer’s public key on plain text HTTP protocol. It is strong enough now.
