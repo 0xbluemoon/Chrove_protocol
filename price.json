@@ -2,6 +2,11 @@
      "content":{
                 "ContractAddress":"rockandroll1",
                 "Price":{"symbol":"EOS","amount":0.1,"unit":"Day"},
+                "AcceptedPayment":[
+                    {"Name":"EOS",                       "Price":{"symbol":"EOS",    "amount":0.1,  "unit":"Day"}, "PaymentMethod":"Address+Memo", "PaymentAddress":"rockandroll1",  "MemoType":"pubkey_in_base58",    "MemoName":"memo", "Coupon":{"CouponTextTypte":"pubkey_in_base58", "ConcatString":":coupon:"}},
+                    {"Name":"Monero",                    "Price":{"symbol":"XMR",    "amount":0.005,"unit":"Day"}, "PaymentMethod":"Address+Memo", "PaymentAddress":"1219sadfa2234", "MemoType":"pubkey_in_hexstring", "MemoName":"payment id"}, 
+                    {"Name":"Bitcoin Lightning Network", "Price":{"symbol":"Satoshi","amount":19295,"unit":"Day"}, "PaymentMethod":"Ask",          "AskParameterType":"pubkey_in_base58", "AskParameterName":"Askparameter"}
+                ],
                 "PublicKey":{
                         "kid":"c2VydmVyaWQ=",
                         "e":"AQAB",
