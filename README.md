@@ -1,5 +1,6 @@
 # Chrove_protocol
-This is a cryptocurrency based payment and ID register protocol. When user pay in cryptocurrency, the vendor know user id from payment memo. User don't need register again. 
+To anonymously order an internet proxy without creditcard, paypal, alipay, some code is written. User just need to pay cryptocurrency, and proxy provider can deliver service to user even user never register account. It works. Not only proxy, many service can benefit from cryptocurrency. User never need to leave personal information. Service provider remove creditcard fraud. 
+
 ## process
 #### setup
 * Vendor setup server and insert server URL into smart contract
