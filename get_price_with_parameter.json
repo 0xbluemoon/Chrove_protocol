@@ -1,0 +1,23 @@
+{
+     "content":{
+                "ContractAddress":"rockandroll1",
+                "Price":{"symbol":"EOS","amount":0.1,"unit":"Day"},
+                "PublicKey":{
+                        "kid":"c2VydmVyaWQ=",
+                        "e":"AQAB",
+                        "kty":"RSA",
+                        "n":"to9LdrXhwEcVFyQ3zjmkx8uM91b4IGt1EwVjy72GXAffiIZb15HjuTVH6xxURZZZxfUALM9_APNWnr4TXzjI7zGzO1rxulxneDsyCIsPIVNc4LoHwtckl8OVpcTG_xjgx9ie4Ni9cb34ImEKlGnKmNwzQOSDPzJVqzvLKWNQ7ZL6QBB8xn3cafZTAYG-2Rvcwnic9_7F5g-WbauxJDlbBHQYjpgenY1Sm8IzlM_LjfscJJrw03Kb_dr7REzoyANShwtuu75BsDUBhPPpPtiPNkiTV4pVCJ8pWs8iSQ9mvEQ9JK1a9LgembfsbqFeFvw7aTvLG5Ri4OxFs7LHi79qLQ"
+                        },
+                "ts":1546675268,
+                "brandinfo":{
+                        "Logo":"http://www.bbb.zzz/logo.pn",
+                        "title":"flying ghost",
+                        "description":"a very secure proxy"
+                        }
+                },
+        "ts_signature":{
+            "payload":"MTU0NjY3NTI2OA",
+            "signature":"prIORadvdNXb_FpKCBZVkzam1eG2ZYBG_LtWgyh9DHLu_uCsI-9CXn6z6jp-4hY4pbhZcEJlPAOoFfvidbLBbR49uwrJxueKvES3_nWkJs2hpO2BeXYTpwzFEk80cITKdj5N3K4iTNS8rVCU-JtO9wYPB-rzguC0rT1DFOwELHupE6FbxFqMskGPEOKGPATQWtrCXEhQZ4qAc-tIVDD8O9AA_X1G0NNaC_hoh-wppXeslufmMU-GUI9NSfnmG3UWy8p6iICdzKbbdczoZNKuYKyYaFfEu9AFmxcyt2Q8y8R6G3BYhwXJs6laHU1AihRUR3-l_zt5Pl9-iwXILFKDTg",
+            "protected":"eyJhbGciOiJSUzI1NiIsImtpZCI6ImMyVnlkbVZ5YVdRPSJ9"
+            }
+    }
